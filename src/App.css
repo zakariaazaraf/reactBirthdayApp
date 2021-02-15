@@ -22,13 +22,13 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  width: 320px;
   padding: 1rem 1.5rem;
   background-color: #fff;
   border-radius: 7px;
 }
 
-.container h3 {
+.container h2 {
   margin: 1rem 0;
 }
 

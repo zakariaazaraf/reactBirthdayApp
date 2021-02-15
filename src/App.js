@@ -4,7 +4,6 @@ import './App.css';
 import data from "./data"
 import { useState } from 'react';
 
-console.log(data.length)
 
 function App() {
   const [birthdays, setBirthdays] = useState(data)
@@ -13,9 +12,9 @@ function App() {
   }
   return (
     <div className="container">
-      <h3>{birthdays.length} Birthdays Today</h3>
-      {birthdays.map(date =>{
-        const {image, id, name, age} = date
+      <h2>{birthdays.length} Birthdays Today</h2>
+      {birthdays.map(person =>{
+        const {image, id, name, age} = person
         return (
           <div key={id} className="info">
             <img src={image} alt={name}></img>

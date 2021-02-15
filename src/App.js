@@ -1,12 +1,12 @@
 import React from "react"
 
 import './App.css';
-import data from "./data"
+import users from "./data"
 import { useState } from 'react';
 
 
 function App() {
-  const [birthdays, setBirthdays] = useState(data)
+  const [birthdays, setBirthdays] = useState(users)
   const clear = () =>{
     setBirthdays([])
   }
